@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <script src="https://use.fontawesome.com/5c7298a6e5.js"></script>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
   <%= render 'shared/navbar' %>
-  
+
   <div class="container">
       <%= yield %>
   </div>

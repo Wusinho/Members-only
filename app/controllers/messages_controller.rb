@@ -1,5 +1,7 @@
 class MessagesController < ApplicationController
   before_action :set_message, only: %i[ show edit update destroy ]
+  before_action :authenticate_user!, except: [:index, :show]
+
 
   # GET /messages or /messages.json
   def index
@@ -14,7 +16,9 @@ class MessagesController < ApplicationController
 
   # GET /messages/new
   def new
-    @message = Message.new
+    #@message = Message.new
+    @message = current_user.messages.build #para interconectarlos
+
   end
 
   # GET /messages/1/edit
@@ -23,7 +27,9 @@ class MessagesController < ApplicationController
 
   # POST /messages or /messages.json
   def create
-    @message = Message.new(message_params)
+    #@message = Message.new(message_params)
+    @message = current_user.messages.build(message_params) #para interconectarlos
+
 
     respond_to do |format|
       if @message.save
