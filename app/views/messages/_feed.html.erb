@@ -1,19 +1,38 @@
-<p id="notice"><%= notice %></p>
+
 
   <% @messages.each do |message| %>
-    <% if user_signed_in? %>
-      <h3><%= message.user.username %></h3>
-    <% end  %>
-  <div><%= message.body %></div>
 
-  <div>
-    <% if user_signed_in? and current_user.id == message.user_id %>
+
+<div class="card">
+  <div class="card-header">
+     <% if user_signed_in? %>
+      <%= message.user.username %>
+      <% else  %>
+      @Hidden-guY
+    <% end  %>
+  </div>
+  <div class="card-body">
+    <p class="card-text"><%= message.body %></p>
+     <% if user_signed_in? and current_user.id == message.user_id %>
 
       <%= link_to 'Show', message %>
       <%= link_to 'Edit', edit_message_path(message) %>
       <%= link_to 'Destroy', message, method: :delete, data: { confirm: 'Are you sure?' } %>
-   </div> 
+   
    <% end  %>
+  </div>
+</div>
+
+
+
+
+
+
+
+  
+
+  
+   
 <% end %>
 
   
