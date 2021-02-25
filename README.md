@@ -68,7 +68,7 @@ To log out, press the sign out link in the navbar. You'll know when you are not 
 
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome!
+Contributions, issues and feature requests are welcome! 
 
 Feel free to check the [issues page](https://github.com/Wusinho/Members-only/issues).
 
