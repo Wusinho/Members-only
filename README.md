@@ -3,7 +3,7 @@
 ## About
 The goal of this project was to understand the foundations of authentication in Ruby on Rails by creating different form layouts that ask the user for different data, so they can have their own account. We set up the user controllers, models and views with the help of the devise gem and render each using bootstrap.
 
-![screenshot](/mnt/c/Users/alfre/Desktop/Authentication/Members-only/screen_shot.PNG)
+![screenshot](https://github.com/Wusinho/Members-only/blob/dev-MO/screen_shot.PNG)
 
 ## Built with
 - Ruby on Rails
@@ -82,6 +82,9 @@ Give a ⭐️ if you like this project!
 - The Odin Project
 - Anyone whose detailed code inspired the creation of this project.
 
+## 📝 License
+
+This project is [MIT](lic.url) licensed.
 
 
 
