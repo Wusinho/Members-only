@@ -12,17 +12,9 @@
 
   <body>
   <%= render 'shared/navbar' %>
-   <% if flash[:notice] %>
-      <div class="alert alert-info mt-0">
-        <%= flash[:notice] %>
-      </div>
-    <% end %>
-
-    <% if flash[:alert] %>
-      <div class="alert alert-warning mt-0"  >
-        <%= flash[:alert] %>
-      </div>
-    <% end %>
+   <%= appNotice %>
+   <%= appAlert %>
+      
   <div class="container">
     <%= yield %>
     </div>

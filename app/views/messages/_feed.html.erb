@@ -4,22 +4,13 @@
 
 
 <div class="card">
-  <div class="card-header">
-     <% if user_signed_in? %>
-      <%= message.user.username %>
-      <% else  %>
-      @Hidden-guY
-    <% end  %>
-  </div>
+  
+     <%= ifFeed(message) %>
+  
   <div class="card-body">
     <p class="card-text"><%= message.body %></p>
-     <% if user_signed_in? and current_user.id == message.user_id %>
 
-      
-      <%= link_to 'Edit', edit_message_path(message) %>
-      <%= link_to 'Destroy', message, method: :delete, data: { confirm: 'Are you sure?' } %>
-   
-   <% end  %>
+   <%= propertiesFEED(message) %>
   </div>
 </div>
 

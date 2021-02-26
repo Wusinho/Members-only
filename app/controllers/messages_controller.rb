@@ -1,6 +1,6 @@
 class MessagesController < ApplicationController
   before_action :set_message, only: %i[show edit update destroy]
-  before_action :authenticate_user!, except: %i[index show]
+  before_action :authenticate_user!, except: %i[index show ]
 
   def index
     @messages = Message.all.order('created_at DESC')
@@ -10,7 +10,8 @@ class MessagesController < ApplicationController
   def show; end
 
   def new
-    @message = current_user.messages.build
+    #@message = current_user.messages.build
+    @message = Message.new
   end
 
   def edit; end
