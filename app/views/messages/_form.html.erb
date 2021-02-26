@@ -1,4 +1,4 @@
-<% if signed_in? %>
+
 <%= simple_form_for(@message) do |f| %>
   <%= f.error_notification %>
   <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
@@ -11,4 +11,3 @@
     <%= f.button :submit %>
   </div>
 <% end %>
-<% end  %>

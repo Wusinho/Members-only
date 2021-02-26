@@ -43,7 +43,15 @@ def propertiesFEED(message)
 
 end
 
+def feedSigned
 
+if user_signed_in?
+  
+
+ render 'form'
+
+end
+end
 
 
 
