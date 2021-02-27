@@ -40,8 +40,9 @@ Run the following comands in the terminal in the next order:
   $ bundle install
 
   Additional:
-  Sometimes you might need to install yarn
-  $ install yarn
+  Sometimes you might need to install yarn:
+  $ install yarn or
+  $ npm install --global yarn
 
 - Step 2:
   Run in the terminal:
