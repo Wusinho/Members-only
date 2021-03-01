@@ -1,0 +1,31 @@
+
+
+  <% @messages.each do |message| %>
+
+
+<div class="card">
+  
+     <%= feed(message) %>
+  
+  <div class="card-body">
+    <p class="card-text"><%= message.body %></p>
+
+   <%= properties(message) %>
+  </div>
+</div>
+
+
+
+
+
+
+
+  
+
+  
+   
+<% end %>
+
+  
+
+
